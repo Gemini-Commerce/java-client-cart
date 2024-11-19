@@ -10,7 +10,7 @@ Name | Type | Description | Notes
 **method**| **String** |   | [optional]
 **shipmentGrn**| **String** |   | [optional]
 **payload**| **String** |   | [optional]
-**cartItemIds**| **List<String>** |   | [optional]
+**cartItemIds**| **List<String>** |   | [optional] [default to new ArrayList<>()]
 **fee**| [**CartMoney**](CartMoney.md) |   | [optional]
 **label**| **String** |   | [optional]
 **vatAmount**| [**CartMoney**](CartMoney.md) |   | [optional]

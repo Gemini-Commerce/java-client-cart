@@ -19,11 +19,11 @@ Apply coupons to the cart
 ### Example
 ```java
 // Import classes:
-import GeminiCommerce_Cart.ApiClient;
-import GeminiCommerce_Cart.ApiException;
-import GeminiCommerce_Cart.Configuration;
-import GeminiCommerce_Cart.auth.*;
-import GeminiCommerce_Cart.models.*;
+import GeminiCommerce.Cart.ApiClient;
+import GeminiCommerce.Cart.ApiException;
+import GeminiCommerce.Cart.Configuration;
+import GeminiCommerce.Cart.auth.*;
+import GeminiCommerce.Cart.models.*;
 import org.openapitools.client.api.PromotionsApi;
 
 public class Example {
@@ -91,11 +91,11 @@ Remove coupons from the cart
 ### Example
 ```java
 // Import classes:
-import GeminiCommerce_Cart.ApiClient;
-import GeminiCommerce_Cart.ApiException;
-import GeminiCommerce_Cart.Configuration;
-import GeminiCommerce_Cart.auth.*;
-import GeminiCommerce_Cart.models.*;
+import GeminiCommerce.Cart.ApiClient;
+import GeminiCommerce.Cart.ApiException;
+import GeminiCommerce.Cart.Configuration;
+import GeminiCommerce.Cart.auth.*;
+import GeminiCommerce.Cart.models.*;
 import org.openapitools.client.api.PromotionsApi;
 
 public class Example {

@@ -55,7 +55,8 @@ paths:
       - Basic Operations
       x-codegen-request-body-name: body
       x-content-type: application/json
-      x-accepts: application/json
+      x-accepts:
+      - application/json
   /cart.Cart/ApplyCoupons:
     post:
       description: Apply coupons to the cart
@@ -97,7 +98,8 @@ paths:
       - Promotions
       x-codegen-request-body-name: body
       x-content-type: application/json
-      x-accepts: application/json
+      x-accepts:
+      - application/json
   /cart.Cart/CreateCart:
     post:
       description: "The CreateCart endpoint allows users to create a new cart for\
@@ -137,7 +139,8 @@ paths:
       - Basic Operations
       x-codegen-request-body-name: body
       x-content-type: application/json
-      x-accepts: application/json
+      x-accepts:
+      - application/json
   /cart.Cart/GetActiveCartByCustomer:
     post:
       description: Get the active cart by customer
@@ -173,7 +176,8 @@ paths:
       - Basic Operations
       x-codegen-request-body-name: body
       x-content-type: application/json
-      x-accepts: application/json
+      x-accepts:
+      - application/json
   /cart.Cart/GetCart:
     post:
       description: Get the cart
@@ -210,7 +214,8 @@ paths:
       - Basic Operations
       x-codegen-request-body-name: body
       x-content-type: application/json
-      x-accepts: application/json
+      x-accepts:
+      - application/json
   /cart.Cart/ListCarts:
     post:
       description: List all carts
@@ -246,7 +251,8 @@ paths:
       - Basic Operations
       x-codegen-request-body-name: body
       x-content-type: application/json
-      x-accepts: application/json
+      x-accepts:
+      - application/json
   /cart.Cart/ListPaymentMethods:
     post:
       description: List payment methods
@@ -300,7 +306,8 @@ paths:
       - Payments
       x-codegen-request-body-name: body
       x-content-type: application/json
-      x-accepts: application/json
+      x-accepts:
+      - application/json
   /cart.Cart/ListShipmentMethods:
     post:
       description: List shipment methods
@@ -354,7 +361,8 @@ paths:
       - Shipments
       x-codegen-request-body-name: body
       x-content-type: application/json
-      x-accepts: application/json
+      x-accepts:
+      - application/json
   /cart.Cart/MergeCarts:
     post:
       description: Merge carts
@@ -396,7 +404,8 @@ paths:
       - Basic Operations
       x-codegen-request-body-name: body
       x-content-type: application/json
-      x-accepts: application/json
+      x-accepts:
+      - application/json
   /cart.Cart/RemoveCoupons:
     post:
       description: Remove coupons from the cart
@@ -438,7 +447,8 @@ paths:
       - Promotions
       x-codegen-request-body-name: body
       x-content-type: application/json
-      x-accepts: application/json
+      x-accepts:
+      - application/json
   /cart.Cart/RemoveProducts:
     post:
       description: Remove products from the cart
@@ -474,7 +484,8 @@ paths:
       - Basic Operations
       x-codegen-request-body-name: body
       x-content-type: application/json
-      x-accepts: application/json
+      x-accepts:
+      - application/json
   /cart.Cart/SetAdditionalInfo:
     post:
       description: Set additional info
@@ -528,7 +539,8 @@ paths:
       - Basic Operations
       x-codegen-request-body-name: body
       x-content-type: application/json
-      x-accepts: application/json
+      x-accepts:
+      - application/json
   /cart.Cart/SetBillingAddress:
     post:
       description: Set billing address
@@ -582,7 +594,8 @@ paths:
       - Addresses
       x-codegen-request-body-name: body
       x-content-type: application/json
-      x-accepts: application/json
+      x-accepts:
+      - application/json
   /cart.Cart/SetCustomPriceOnItems:
     post:
       operationId: Cart_SetCustomPriceOnItems
@@ -609,7 +622,8 @@ paths:
       - Cart
       x-codegen-request-body-name: body
       x-content-type: application/json
-      x-accepts: application/json
+      x-accepts:
+      - application/json
   /cart.Cart/SetNotes:
     post:
       description: Set notes
@@ -663,7 +677,8 @@ paths:
       - Basic Operations
       x-codegen-request-body-name: body
       x-content-type: application/json
-      x-accepts: application/json
+      x-accepts:
+      - application/json
   /cart.Cart/SetPayments:
     post:
       description: Set SetPayments
@@ -705,7 +720,8 @@ paths:
       - Payments
       x-codegen-request-body-name: body
       x-content-type: application/json
-      x-accepts: application/json
+      x-accepts:
+      - application/json
   /cart.Cart/SetShipmentAddress:
     post:
       description: Set shipment address
@@ -759,7 +775,8 @@ paths:
       - Addresses
       x-codegen-request-body-name: body
       x-content-type: application/json
-      x-accepts: application/json
+      x-accepts:
+      - application/json
   /cart.Cart/SetShipments:
     post:
       description: Set shipments
@@ -801,7 +818,8 @@ paths:
       - Shipments
       x-codegen-request-body-name: body
       x-content-type: application/json
-      x-accepts: application/json
+      x-accepts:
+      - application/json
   /cart.Cart/TriggerRealignment:
     post:
       description: Trigger realignment
@@ -855,7 +873,8 @@ paths:
       - Basic Operations
       x-codegen-request-body-name: body
       x-content-type: application/json
-      x-accepts: application/json
+      x-accepts:
+      - application/json
   /cart.Cart/UpdateCart:
     post:
       description: Update the cart
@@ -891,7 +910,8 @@ paths:
       - Basic Operations
       x-codegen-request-body-name: body
       x-content-type: application/json
-      x-accepts: application/json
+      x-accepts:
+      - application/json
   /cart.Cart/UpdateProducts:
     post:
       description: Update products in the cart
@@ -927,7 +947,8 @@ paths:
       - Basic Operations
       x-codegen-request-body-name: body
       x-content-type: application/json
-      x-accepts: application/json
+      x-accepts:
+      - application/json
 components:
   schemas:
     CartSubtotalCode:
@@ -1144,11 +1165,11 @@ components:
     cartCartData:
       example:
         subtotals:
-        - code: null
+        - code: UNKNOWN
           value:
             micros: 0
             units: units
-        - code: null
+        - code: UNKNOWN
           value:
             micros: 0
             units: units
@@ -1304,7 +1325,7 @@ components:
           addressLines:
           - addressLines
           - addressLines
-        currency: null
+        currency: XXX
         id: id
         billingAddress:
           postalCode: postalCode
@@ -1555,7 +1576,7 @@ components:
           basePrice:
             micros: 0
             units: units
-        status: null
+        status: UNKNOWN
         customer:
           firstname: firstname
           phoneNumber: phoneNumber
@@ -1816,7 +1837,7 @@ components:
       type: string
     cartCartSubtotal:
       example:
-        code: null
+        code: UNKNOWN
         value:
           micros: 0
           units: units
@@ -1826,6 +1847,7 @@ components:
         value:
           $ref: '#/components/schemas/cartMoney'
       type: object
+      x-golang-getsetvalue-exists: true
     cartCreateCartRequest:
       properties:
         tenantId:
@@ -2097,11 +2119,11 @@ components:
       example:
         cart:
           subtotals:
-          - code: null
+          - code: UNKNOWN
             value:
               micros: 0
               units: units
-          - code: null
+          - code: UNKNOWN
             value:
               micros: 0
               units: units
@@ -2257,7 +2279,7 @@ components:
             addressLines:
             - addressLines
             - addressLines
-          currency: null
+          currency: XXX
           id: id
           billingAddress:
             postalCode: postalCode
@@ -2508,7 +2530,7 @@ components:
             basePrice:
               micros: 0
               units: units
-          status: null
+          status: UNKNOWN
           customer:
             firstname: firstname
             phoneNumber: phoneNumber
@@ -2546,11 +2568,11 @@ components:
       example:
         cart:
           subtotals:
-          - code: null
+          - code: UNKNOWN
             value:
               micros: 0
               units: units
-          - code: null
+          - code: UNKNOWN
             value:
               micros: 0
               units: units
@@ -2706,7 +2728,7 @@ components:
             addressLines:
             - addressLines
             - addressLines
-          currency: null
+          currency: XXX
           id: id
           billingAddress:
             postalCode: postalCode
@@ -2957,7 +2979,7 @@ components:
             basePrice:
               micros: 0
               units: units
-          status: null
+          status: UNKNOWN
           customer:
             firstname: firstname
             phoneNumber: phoneNumber
@@ -3016,11 +3038,11 @@ components:
       example:
         carts:
         - subtotals:
-          - code: null
+          - code: UNKNOWN
             value:
               micros: 0
               units: units
-          - code: null
+          - code: UNKNOWN
             value:
               micros: 0
               units: units
@@ -3176,7 +3198,7 @@ components:
             addressLines:
             - addressLines
             - addressLines
-          currency: null
+          currency: XXX
           id: id
           billingAddress:
             postalCode: postalCode
@@ -3427,7 +3449,7 @@ components:
             basePrice:
               micros: 0
               units: units
-          status: null
+          status: UNKNOWN
           customer:
             firstname: firstname
             phoneNumber: phoneNumber
@@ -3445,11 +3467,11 @@ components:
             agentGrn: agentGrn
           updatedAt: 2000-01-23T04:56:07.000+00:00
         - subtotals:
-          - code: null
+          - code: UNKNOWN
             value:
               micros: 0
               units: units
-          - code: null
+          - code: UNKNOWN
             value:
               micros: 0
               units: units
@@ -3605,7 +3627,7 @@ components:
             addressLines:
             - addressLines
             - addressLines
-          currency: null
+          currency: XXX
           id: id
           billingAddress:
             postalCode: postalCode
@@ -3856,7 +3878,7 @@ components:
             basePrice:
               micros: 0
               units: units
-          status: null
+          status: UNKNOWN
           customer:
             firstname: firstname
             phoneNumber: phoneNumber
@@ -4006,6 +4028,7 @@ components:
             type: string
           type: object
       type: object
+      x-golang-getsetvalue-exists: true
     cartMergeCartsRequest:
       properties:
         tenantId:
@@ -4678,6 +4701,8 @@ components:
     protobufAny:
       additionalProperties:
         type: object
+      example:
+        '@type': '@type'
       properties:
         '@type':
           type: string
@@ -4695,6 +4720,12 @@ components:
       - NULL_VALUE
       type: string
     rpcStatus:
+      example:
+        code: 1
+        details:
+        - '@type': '@type'
+        - '@type': '@type'
+        message: message
       properties:
         code:
           format: int32

@@ -29,11 +29,11 @@ This endpoint allows you to add products to a shopping cart. The AddProducts met
 ### Example
 ```java
 // Import classes:
-import GeminiCommerce_Cart.ApiClient;
-import GeminiCommerce_Cart.ApiException;
-import GeminiCommerce_Cart.Configuration;
-import GeminiCommerce_Cart.auth.*;
-import GeminiCommerce_Cart.models.*;
+import GeminiCommerce.Cart.ApiClient;
+import GeminiCommerce.Cart.ApiException;
+import GeminiCommerce.Cart.Configuration;
+import GeminiCommerce.Cart.auth.*;
+import GeminiCommerce.Cart.models.*;
 import org.openapitools.client.api.BasicOperationsApi;
 
 public class Example {
@@ -100,11 +100,11 @@ The CreateCart endpoint allows users to create a new cart for their shopping ses
 ### Example
 ```java
 // Import classes:
-import GeminiCommerce_Cart.ApiClient;
-import GeminiCommerce_Cart.ApiException;
-import GeminiCommerce_Cart.Configuration;
-import GeminiCommerce_Cart.auth.*;
-import GeminiCommerce_Cart.models.*;
+import GeminiCommerce.Cart.ApiClient;
+import GeminiCommerce.Cart.ApiException;
+import GeminiCommerce.Cart.Configuration;
+import GeminiCommerce.Cart.auth.*;
+import GeminiCommerce.Cart.models.*;
 import org.openapitools.client.api.BasicOperationsApi;
 
 public class Example {
@@ -171,11 +171,11 @@ Get the active cart by customer
 ### Example
 ```java
 // Import classes:
-import GeminiCommerce_Cart.ApiClient;
-import GeminiCommerce_Cart.ApiException;
-import GeminiCommerce_Cart.Configuration;
-import GeminiCommerce_Cart.auth.*;
-import GeminiCommerce_Cart.models.*;
+import GeminiCommerce.Cart.ApiClient;
+import GeminiCommerce.Cart.ApiException;
+import GeminiCommerce.Cart.Configuration;
+import GeminiCommerce.Cart.auth.*;
+import GeminiCommerce.Cart.models.*;
 import org.openapitools.client.api.BasicOperationsApi;
 
 public class Example {
@@ -242,11 +242,11 @@ Get the cart
 ### Example
 ```java
 // Import classes:
-import GeminiCommerce_Cart.ApiClient;
-import GeminiCommerce_Cart.ApiException;
-import GeminiCommerce_Cart.Configuration;
-import GeminiCommerce_Cart.auth.*;
-import GeminiCommerce_Cart.models.*;
+import GeminiCommerce.Cart.ApiClient;
+import GeminiCommerce.Cart.ApiException;
+import GeminiCommerce.Cart.Configuration;
+import GeminiCommerce.Cart.auth.*;
+import GeminiCommerce.Cart.models.*;
 import org.openapitools.client.api.BasicOperationsApi;
 
 public class Example {
@@ -313,11 +313,11 @@ List all carts
 ### Example
 ```java
 // Import classes:
-import GeminiCommerce_Cart.ApiClient;
-import GeminiCommerce_Cart.ApiException;
-import GeminiCommerce_Cart.Configuration;
-import GeminiCommerce_Cart.auth.*;
-import GeminiCommerce_Cart.models.*;
+import GeminiCommerce.Cart.ApiClient;
+import GeminiCommerce.Cart.ApiException;
+import GeminiCommerce.Cart.Configuration;
+import GeminiCommerce.Cart.auth.*;
+import GeminiCommerce.Cart.models.*;
 import org.openapitools.client.api.BasicOperationsApi;
 
 public class Example {
@@ -384,11 +384,11 @@ Merge carts
 ### Example
 ```java
 // Import classes:
-import GeminiCommerce_Cart.ApiClient;
-import GeminiCommerce_Cart.ApiException;
-import GeminiCommerce_Cart.Configuration;
-import GeminiCommerce_Cart.auth.*;
-import GeminiCommerce_Cart.models.*;
+import GeminiCommerce.Cart.ApiClient;
+import GeminiCommerce.Cart.ApiException;
+import GeminiCommerce.Cart.Configuration;
+import GeminiCommerce.Cart.auth.*;
+import GeminiCommerce.Cart.models.*;
 import org.openapitools.client.api.BasicOperationsApi;
 
 public class Example {
@@ -456,11 +456,11 @@ Remove products from the cart
 ### Example
 ```java
 // Import classes:
-import GeminiCommerce_Cart.ApiClient;
-import GeminiCommerce_Cart.ApiException;
-import GeminiCommerce_Cart.Configuration;
-import GeminiCommerce_Cart.auth.*;
-import GeminiCommerce_Cart.models.*;
+import GeminiCommerce.Cart.ApiClient;
+import GeminiCommerce.Cart.ApiException;
+import GeminiCommerce.Cart.Configuration;
+import GeminiCommerce.Cart.auth.*;
+import GeminiCommerce.Cart.models.*;
 import org.openapitools.client.api.BasicOperationsApi;
 
 public class Example {
@@ -527,11 +527,11 @@ Set additional info
 ### Example
 ```java
 // Import classes:
-import GeminiCommerce_Cart.ApiClient;
-import GeminiCommerce_Cart.ApiException;
-import GeminiCommerce_Cart.Configuration;
-import GeminiCommerce_Cart.auth.*;
-import GeminiCommerce_Cart.models.*;
+import GeminiCommerce.Cart.ApiClient;
+import GeminiCommerce.Cart.ApiException;
+import GeminiCommerce.Cart.Configuration;
+import GeminiCommerce.Cart.auth.*;
+import GeminiCommerce.Cart.models.*;
 import org.openapitools.client.api.BasicOperationsApi;
 
 public class Example {
@@ -601,11 +601,11 @@ Set notes
 ### Example
 ```java
 // Import classes:
-import GeminiCommerce_Cart.ApiClient;
-import GeminiCommerce_Cart.ApiException;
-import GeminiCommerce_Cart.Configuration;
-import GeminiCommerce_Cart.auth.*;
-import GeminiCommerce_Cart.models.*;
+import GeminiCommerce.Cart.ApiClient;
+import GeminiCommerce.Cart.ApiException;
+import GeminiCommerce.Cart.Configuration;
+import GeminiCommerce.Cart.auth.*;
+import GeminiCommerce.Cart.models.*;
 import org.openapitools.client.api.BasicOperationsApi;
 
 public class Example {
@@ -675,11 +675,11 @@ Trigger realignment
 ### Example
 ```java
 // Import classes:
-import GeminiCommerce_Cart.ApiClient;
-import GeminiCommerce_Cart.ApiException;
-import GeminiCommerce_Cart.Configuration;
-import GeminiCommerce_Cart.auth.*;
-import GeminiCommerce_Cart.models.*;
+import GeminiCommerce.Cart.ApiClient;
+import GeminiCommerce.Cart.ApiException;
+import GeminiCommerce.Cart.Configuration;
+import GeminiCommerce.Cart.auth.*;
+import GeminiCommerce.Cart.models.*;
 import org.openapitools.client.api.BasicOperationsApi;
 
 public class Example {
@@ -749,11 +749,11 @@ Update the cart
 ### Example
 ```java
 // Import classes:
-import GeminiCommerce_Cart.ApiClient;
-import GeminiCommerce_Cart.ApiException;
-import GeminiCommerce_Cart.Configuration;
-import GeminiCommerce_Cart.auth.*;
-import GeminiCommerce_Cart.models.*;
+import GeminiCommerce.Cart.ApiClient;
+import GeminiCommerce.Cart.ApiException;
+import GeminiCommerce.Cart.Configuration;
+import GeminiCommerce.Cart.auth.*;
+import GeminiCommerce.Cart.models.*;
 import org.openapitools.client.api.BasicOperationsApi;
 
 public class Example {
@@ -820,11 +820,11 @@ Update products in the cart
 ### Example
 ```java
 // Import classes:
-import GeminiCommerce_Cart.ApiClient;
-import GeminiCommerce_Cart.ApiException;
-import GeminiCommerce_Cart.Configuration;
-import GeminiCommerce_Cart.auth.*;
-import GeminiCommerce_Cart.models.*;
+import GeminiCommerce.Cart.ApiClient;
+import GeminiCommerce.Cart.ApiException;
+import GeminiCommerce.Cart.Configuration;
+import GeminiCommerce.Cart.auth.*;
+import GeminiCommerce.Cart.models.*;
 import org.openapitools.client.api.BasicOperationsApi;
 
 public class Example {

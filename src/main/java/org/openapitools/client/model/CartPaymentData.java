@@ -39,19 +39,18 @@ import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
 
-import java.lang.reflect.Type;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
-import GeminiCommerce_Cart.JSON;
+import GeminiCommerce.Cart.JSON;
 
 /**
  * CartPaymentData
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-05-21T15:21:28.271708366Z[Etc/UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-19T10:43:10.860688922Z[Etc/UTC]", comments = "Generator version: 7.9.0")
 public class CartPaymentData {
   public static final String SERIALIZED_NAME_CODE = "code";
   @SerializedName(SERIALIZED_NAME_CODE)
@@ -109,10 +108,10 @@ public class CartPaymentData {
     return this;
   }
 
-   /**
+  /**
    * Get code
    * @return code
-  **/
+   */
   @javax.annotation.Nullable
   public String getCode() {
     return code;
@@ -128,10 +127,10 @@ public class CartPaymentData {
     return this;
   }
 
-   /**
+  /**
    * Get title
    * @return title
-  **/
+   */
   @javax.annotation.Nullable
   public CartLocalizedText getTitle() {
     return title;
@@ -147,10 +146,10 @@ public class CartPaymentData {
     return this;
   }
 
-   /**
+  /**
    * Get payload
    * @return payload
-  **/
+   */
   @javax.annotation.Nullable
   public String getPayload() {
     return payload;
@@ -166,10 +165,10 @@ public class CartPaymentData {
     return this;
   }
 
-   /**
+  /**
    * Get fee
    * @return fee
-  **/
+   */
   @javax.annotation.Nullable
   public CartMoney getFee() {
     return fee;
@@ -185,10 +184,10 @@ public class CartPaymentData {
     return this;
   }
 
-   /**
+  /**
    * Get amount
    * @return amount
-  **/
+   */
   @javax.annotation.Nullable
   public CartMoney getAmount() {
     return amount;
@@ -204,10 +203,10 @@ public class CartPaymentData {
     return this;
   }
 
-   /**
+  /**
    * Get label
    * @return label
-  **/
+   */
   @javax.annotation.Nullable
   public CartLocalizedText getLabel() {
     return label;
@@ -223,10 +222,10 @@ public class CartPaymentData {
     return this;
   }
 
-   /**
+  /**
    * Get description
    * @return description
-  **/
+   */
   @javax.annotation.Nullable
   public CartLocalizedText getDescription() {
     return description;
@@ -242,10 +241,10 @@ public class CartPaymentData {
     return this;
   }
 
-   /**
+  /**
    * Get vatAmount
    * @return vatAmount
-  **/
+   */
   @javax.annotation.Nullable
   public CartMoney getVatAmount() {
     return vatAmount;
@@ -261,10 +260,10 @@ public class CartPaymentData {
     return this;
   }
 
-   /**
+  /**
    * Get vatPercentage
    * @return vatPercentage
-  **/
+   */
   @javax.annotation.Nullable
   public Float getVatPercentage() {
     return vatPercentage;
@@ -280,10 +279,10 @@ public class CartPaymentData {
     return this;
   }
 
-   /**
+  /**
    * Get vatInaccurate
    * @return vatInaccurate
-  **/
+   */
   @javax.annotation.Nullable
   public Boolean getVatInaccurate() {
     return vatInaccurate;
@@ -299,10 +298,10 @@ public class CartPaymentData {
     return this;
   }
 
-   /**
+  /**
    * Get vatCalculated
    * @return vatCalculated
-  **/
+   */
   @javax.annotation.Nullable
   public Boolean getVatCalculated() {
     return vatCalculated;
@@ -318,10 +317,10 @@ public class CartPaymentData {
     return this;
   }
 
-   /**
+  /**
    * Get isUpfront
    * @return isUpfront
-  **/
+   */
   @javax.annotation.Nullable
   public Boolean getIsUpfront() {
     return isUpfront;
@@ -331,6 +330,50 @@ public class CartPaymentData {
     this.isUpfront = isUpfront;
   }
 
+  /**
+   * A container for additional, undeclared properties.
+   * This is a holder for any undeclared properties as specified with
+   * the 'additionalProperties' keyword in the OAS document.
+   */
+  private Map<String, Object> additionalProperties;
+
+  /**
+   * Set the additional (undeclared) property with the specified name and value.
+   * If the property does not already exist, create it otherwise replace it.
+   *
+   * @param key name of the property
+   * @param value value of the property
+   * @return the CartPaymentData instance itself
+   */
+  public CartPaymentData putAdditionalProperty(String key, Object value) {
+    if (this.additionalProperties == null) {
+        this.additionalProperties = new HashMap<String, Object>();
+    }
+    this.additionalProperties.put(key, value);
+    return this;
+  }
+
+  /**
+   * Return the additional (undeclared) property.
+   *
+   * @return a map of objects
+   */
+  public Map<String, Object> getAdditionalProperties() {
+    return additionalProperties;
+  }
+
+  /**
+   * Return the additional (undeclared) property with the specified name.
+   *
+   * @param key name of the property
+   * @return an object
+   */
+  public Object getAdditionalProperty(String key) {
+    if (this.additionalProperties == null) {
+        return null;
+    }
+    return this.additionalProperties.get(key);
+  }
 
 
   @Override
@@ -353,12 +396,13 @@ public class CartPaymentData {
         Objects.equals(this.vatPercentage, cartPaymentData.vatPercentage) &&
         Objects.equals(this.vatInaccurate, cartPaymentData.vatInaccurate) &&
         Objects.equals(this.vatCalculated, cartPaymentData.vatCalculated) &&
-        Objects.equals(this.isUpfront, cartPaymentData.isUpfront);
+        Objects.equals(this.isUpfront, cartPaymentData.isUpfront)&&
+        Objects.equals(this.additionalProperties, cartPaymentData.additionalProperties);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(code, title, payload, fee, amount, label, description, vatAmount, vatPercentage, vatInaccurate, vatCalculated, isUpfront);
+    return Objects.hash(code, title, payload, fee, amount, label, description, vatAmount, vatPercentage, vatInaccurate, vatCalculated, isUpfront, additionalProperties);
   }
 
   @Override
@@ -377,6 +421,7 @@ public class CartPaymentData {
     sb.append("    vatInaccurate: ").append(toIndentedString(vatInaccurate)).append("\n");
     sb.append("    vatCalculated: ").append(toIndentedString(vatCalculated)).append("\n");
     sb.append("    isUpfront: ").append(toIndentedString(isUpfront)).append("\n");
+    sb.append("    additionalProperties: ").append(toIndentedString(additionalProperties)).append("\n");
     sb.append("}");
     return sb.toString();
   }
@@ -416,24 +461,16 @@ public class CartPaymentData {
     openapiRequiredFields = new HashSet<String>();
   }
 
- /**
-  * Validates the JSON Element and throws an exception if issues found
-  *
-  * @param jsonElement JSON Element
-  * @throws IOException if the JSON Element is invalid with respect to CartPaymentData
-  */
+  /**
+   * Validates the JSON Element and throws an exception if issues found
+   *
+   * @param jsonElement JSON Element
+   * @throws IOException if the JSON Element is invalid with respect to CartPaymentData
+   */
   public static void validateJsonElement(JsonElement jsonElement) throws IOException {
       if (jsonElement == null) {
         if (!CartPaymentData.openapiRequiredFields.isEmpty()) { // has required fields but JSON element is null
           throw new IllegalArgumentException(String.format("The required field(s) %s in CartPaymentData is not found in the empty JSON string", CartPaymentData.openapiRequiredFields.toString()));
-        }
-      }
-
-      Set<Map.Entry<String, JsonElement>> entries = jsonElement.getAsJsonObject().entrySet();
-      // check to see if the JSON string contains additional fields
-      for (Map.Entry<String, JsonElement> entry : entries) {
-        if (!CartPaymentData.openapiFields.contains(entry.getKey())) {
-          throw new IllegalArgumentException(String.format("The field `%s` in the JSON string is not defined in the `CartPaymentData` properties. JSON: %s", entry.getKey(), jsonElement.toString()));
         }
       }
         JsonObject jsonObj = jsonElement.getAsJsonObject();
@@ -484,6 +521,28 @@ public class CartPaymentData {
            @Override
            public void write(JsonWriter out, CartPaymentData value) throws IOException {
              JsonObject obj = thisAdapter.toJsonTree(value).getAsJsonObject();
+             obj.remove("additionalProperties");
+             // serialize additional properties
+             if (value.getAdditionalProperties() != null) {
+               for (Map.Entry<String, Object> entry : value.getAdditionalProperties().entrySet()) {
+                 if (entry.getValue() instanceof String)
+                   obj.addProperty(entry.getKey(), (String) entry.getValue());
+                 else if (entry.getValue() instanceof Number)
+                   obj.addProperty(entry.getKey(), (Number) entry.getValue());
+                 else if (entry.getValue() instanceof Boolean)
+                   obj.addProperty(entry.getKey(), (Boolean) entry.getValue());
+                 else if (entry.getValue() instanceof Character)
+                   obj.addProperty(entry.getKey(), (Character) entry.getValue());
+                 else {
+                   JsonElement jsonElement = gson.toJsonTree(entry.getValue());
+                   if (jsonElement.isJsonArray()) {
+                     obj.add(entry.getKey(), jsonElement.getAsJsonArray());
+                   } else {
+                     obj.add(entry.getKey(), jsonElement.getAsJsonObject());
+                   }
+                 }
+               }
+             }
              elementAdapter.write(out, obj);
            }
 
@@ -491,29 +550,50 @@ public class CartPaymentData {
            public CartPaymentData read(JsonReader in) throws IOException {
              JsonElement jsonElement = elementAdapter.read(in);
              validateJsonElement(jsonElement);
-             return thisAdapter.fromJsonTree(jsonElement);
+             JsonObject jsonObj = jsonElement.getAsJsonObject();
+             // store additional fields in the deserialized instance
+             CartPaymentData instance = thisAdapter.fromJsonTree(jsonObj);
+             for (Map.Entry<String, JsonElement> entry : jsonObj.entrySet()) {
+               if (!openapiFields.contains(entry.getKey())) {
+                 if (entry.getValue().isJsonPrimitive()) { // primitive type
+                   if (entry.getValue().getAsJsonPrimitive().isString())
+                     instance.putAdditionalProperty(entry.getKey(), entry.getValue().getAsString());
+                   else if (entry.getValue().getAsJsonPrimitive().isNumber())
+                     instance.putAdditionalProperty(entry.getKey(), entry.getValue().getAsNumber());
+                   else if (entry.getValue().getAsJsonPrimitive().isBoolean())
+                     instance.putAdditionalProperty(entry.getKey(), entry.getValue().getAsBoolean());
+                   else
+                     throw new IllegalArgumentException(String.format("The field `%s` has unknown primitive type. Value: %s", entry.getKey(), entry.getValue().toString()));
+                 } else if (entry.getValue().isJsonArray()) {
+                     instance.putAdditionalProperty(entry.getKey(), gson.fromJson(entry.getValue(), List.class));
+                 } else { // JSON object
+                     instance.putAdditionalProperty(entry.getKey(), gson.fromJson(entry.getValue(), HashMap.class));
+                 }
+               }
+             }
+             return instance;
            }
 
        }.nullSafe();
     }
   }
 
- /**
-  * Create an instance of CartPaymentData given an JSON string
-  *
-  * @param jsonString JSON string
-  * @return An instance of CartPaymentData
-  * @throws IOException if the JSON string is invalid with respect to CartPaymentData
-  */
+  /**
+   * Create an instance of CartPaymentData given an JSON string
+   *
+   * @param jsonString JSON string
+   * @return An instance of CartPaymentData
+   * @throws IOException if the JSON string is invalid with respect to CartPaymentData
+   */
   public static CartPaymentData fromJson(String jsonString) throws IOException {
     return JSON.getGson().fromJson(jsonString, CartPaymentData.class);
   }
 
- /**
-  * Convert an instance of CartPaymentData to an JSON string
-  *
-  * @return JSON string
-  */
+  /**
+   * Convert an instance of CartPaymentData to an JSON string
+   *
+   * @return JSON string
+   */
   public String toJson() {
     return JSON.getGson().toJson(this);
   }

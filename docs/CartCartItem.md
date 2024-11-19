@@ -8,7 +8,7 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **id**| **String** |   | [optional]
 **productGrn**| **String** |   | [optional]
-**productConfiguration**| [**List<CartProductConfigurationStep>**](CartProductConfigurationStep.md) |   | [optional]
+**productConfiguration**| [**List<CartProductConfigurationStep>**](CartProductConfigurationStep.md) |   | [optional] [default to new ArrayList<>()]
 **quantity**| **Long** |   | [optional]
 **price**| [**CartMoney**](CartMoney.md) |   | [optional]
 **listPrice**| [**CartMoney**](CartMoney.md) |   | [optional]
@@ -25,7 +25,7 @@ Name | Type | Description | Notes
 **imageGrn**| **String** |   | [optional]
 **variantOptions**| **String** |   | [optional]
 **isVirtual**| **Boolean** |   | [optional]
-**promotionGrns**| **List<String>** |   | [optional]
+**promotionGrns**| **List<String>** |   | [optional] [default to new ArrayList<>()]
 **additionalInfo**| **String** |   | [optional]
 **productData**| **String** |   | [optional]
 

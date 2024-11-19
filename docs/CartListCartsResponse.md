@@ -6,7 +6,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**carts**| [**List<CartCartData>**](CartCartData.md) |   | [optional]
+**carts**| [**List<CartCartData>**](CartCartData.md) |   | [optional] [default to new ArrayList<>()]
 **nextPageToken**| **String** |   | [optional]
 
 

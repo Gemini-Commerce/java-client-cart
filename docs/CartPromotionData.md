@@ -9,7 +9,7 @@ Name | Type | Description | Notes
 **promotionGrn**| **String** |   | [optional]
 **type**| **String** |   | [optional]
 **payload**| **String** |   | [optional]
-**cartItemIds**| **List<String>** |   | [optional]
+**cartItemIds**| **List<String>** |   | [optional] [default to new ArrayList<>()]
 **name**| **String** |   | [optional]
 **description**| **String** |   | [optional]
 **couponCode**| **String** |   | [optional]

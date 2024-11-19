@@ -44,19 +44,18 @@ import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
 
-import java.lang.reflect.Type;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
-import GeminiCommerce_Cart.JSON;
+import GeminiCommerce.Cart.JSON;
 
 /**
  * CartCartItem
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-05-21T15:21:28.271708366Z[Etc/UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-19T10:43:10.860688922Z[Etc/UTC]", comments = "Generator version: 7.9.0")
 public class CartCartItem {
   public static final String SERIALIZED_NAME_ID = "id";
   @SerializedName(SERIALIZED_NAME_ID)
@@ -68,7 +67,7 @@ public class CartCartItem {
 
   public static final String SERIALIZED_NAME_PRODUCT_CONFIGURATION = "productConfiguration";
   @SerializedName(SERIALIZED_NAME_PRODUCT_CONFIGURATION)
-  private List<CartProductConfigurationStep> productConfiguration;
+  private List<CartProductConfigurationStep> productConfiguration = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_QUANTITY = "quantity";
   @SerializedName(SERIALIZED_NAME_QUANTITY)
@@ -136,7 +135,7 @@ public class CartCartItem {
 
   public static final String SERIALIZED_NAME_PROMOTION_GRNS = "promotionGrns";
   @SerializedName(SERIALIZED_NAME_PROMOTION_GRNS)
-  private List<String> promotionGrns;
+  private List<String> promotionGrns = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_ADDITIONAL_INFO = "additionalInfo";
   @SerializedName(SERIALIZED_NAME_ADDITIONAL_INFO)
@@ -154,10 +153,10 @@ public class CartCartItem {
     return this;
   }
 
-   /**
+  /**
    * Get id
    * @return id
-  **/
+   */
   @javax.annotation.Nullable
   public String getId() {
     return id;
@@ -173,10 +172,10 @@ public class CartCartItem {
     return this;
   }
 
-   /**
+  /**
    * Get productGrn
    * @return productGrn
-  **/
+   */
   @javax.annotation.Nullable
   public String getProductGrn() {
     return productGrn;
@@ -200,10 +199,10 @@ public class CartCartItem {
     return this;
   }
 
-   /**
+  /**
    * Get productConfiguration
    * @return productConfiguration
-  **/
+   */
   @javax.annotation.Nullable
   public List<CartProductConfigurationStep> getProductConfiguration() {
     return productConfiguration;
@@ -219,10 +218,10 @@ public class CartCartItem {
     return this;
   }
 
-   /**
+  /**
    * Get quantity
    * @return quantity
-  **/
+   */
   @javax.annotation.Nullable
   public Long getQuantity() {
     return quantity;
@@ -238,10 +237,10 @@ public class CartCartItem {
     return this;
   }
 
-   /**
+  /**
    * Get price
    * @return price
-  **/
+   */
   @javax.annotation.Nullable
   public CartMoney getPrice() {
     return price;
@@ -257,10 +256,10 @@ public class CartCartItem {
     return this;
   }
 
-   /**
+  /**
    * Get listPrice
    * @return listPrice
-  **/
+   */
   @javax.annotation.Nullable
   public CartMoney getListPrice() {
     return listPrice;
@@ -276,10 +275,10 @@ public class CartCartItem {
     return this;
   }
 
-   /**
+  /**
    * Get discount
    * @return discount
-  **/
+   */
   @javax.annotation.Nullable
   public CartMoney getDiscount() {
     return discount;
@@ -295,10 +294,10 @@ public class CartCartItem {
     return this;
   }
 
-   /**
+  /**
    * Get basePrice
    * @return basePrice
-  **/
+   */
   @javax.annotation.Nullable
   public CartMoney getBasePrice() {
     return basePrice;
@@ -314,10 +313,10 @@ public class CartCartItem {
     return this;
   }
 
-   /**
+  /**
    * Get customPrice
    * @return customPrice
-  **/
+   */
   @javax.annotation.Nullable
   public CartItemCustomPrice getCustomPrice() {
     return customPrice;
@@ -333,10 +332,10 @@ public class CartCartItem {
     return this;
   }
 
-   /**
+  /**
    * Get vatAmount
    * @return vatAmount
-  **/
+   */
   @javax.annotation.Nullable
   public CartMoney getVatAmount() {
     return vatAmount;
@@ -352,10 +351,10 @@ public class CartCartItem {
     return this;
   }
 
-   /**
+  /**
    * Get vatPercentage
    * @return vatPercentage
-  **/
+   */
   @javax.annotation.Nullable
   public Float getVatPercentage() {
     return vatPercentage;
@@ -371,10 +370,10 @@ public class CartCartItem {
     return this;
   }
 
-   /**
+  /**
    * Get vatInaccurate
    * @return vatInaccurate
-  **/
+   */
   @javax.annotation.Nullable
   public Boolean getVatInaccurate() {
     return vatInaccurate;
@@ -390,10 +389,10 @@ public class CartCartItem {
     return this;
   }
 
-   /**
+  /**
    * Get vatCalculated
    * @return vatCalculated
-  **/
+   */
   @javax.annotation.Nullable
   public Boolean getVatCalculated() {
     return vatCalculated;
@@ -417,10 +416,10 @@ public class CartCartItem {
     return this;
   }
 
-   /**
+  /**
    * Get localizedName
    * @return localizedName
-  **/
+   */
   @javax.annotation.Nullable
   public Map<String, String> getLocalizedName() {
     return localizedName;
@@ -436,10 +435,10 @@ public class CartCartItem {
     return this;
   }
 
-   /**
+  /**
    * Get productCode
    * @return productCode
-  **/
+   */
   @javax.annotation.Nullable
   public String getProductCode() {
     return productCode;
@@ -455,10 +454,10 @@ public class CartCartItem {
     return this;
   }
 
-   /**
+  /**
    * Get productSku
    * @return productSku
-  **/
+   */
   @javax.annotation.Nullable
   public String getProductSku() {
     return productSku;
@@ -474,10 +473,10 @@ public class CartCartItem {
     return this;
   }
 
-   /**
+  /**
    * Get imageGrn
    * @return imageGrn
-  **/
+   */
   @javax.annotation.Nullable
   public String getImageGrn() {
     return imageGrn;
@@ -493,10 +492,10 @@ public class CartCartItem {
     return this;
   }
 
-   /**
+  /**
    * Get variantOptions
    * @return variantOptions
-  **/
+   */
   @javax.annotation.Nullable
   public String getVariantOptions() {
     return variantOptions;
@@ -512,10 +511,10 @@ public class CartCartItem {
     return this;
   }
 
-   /**
+  /**
    * Get isVirtual
    * @return isVirtual
-  **/
+   */
   @javax.annotation.Nullable
   public Boolean getIsVirtual() {
     return isVirtual;
@@ -539,10 +538,10 @@ public class CartCartItem {
     return this;
   }
 
-   /**
+  /**
    * Get promotionGrns
    * @return promotionGrns
-  **/
+   */
   @javax.annotation.Nullable
   public List<String> getPromotionGrns() {
     return promotionGrns;
@@ -558,10 +557,10 @@ public class CartCartItem {
     return this;
   }
 
-   /**
+  /**
    * Get additionalInfo
    * @return additionalInfo
-  **/
+   */
   @javax.annotation.Nullable
   public String getAdditionalInfo() {
     return additionalInfo;
@@ -577,10 +576,10 @@ public class CartCartItem {
     return this;
   }
 
-   /**
+  /**
    * Get productData
    * @return productData
-  **/
+   */
   @javax.annotation.Nullable
   public String getProductData() {
     return productData;
@@ -590,6 +589,50 @@ public class CartCartItem {
     this.productData = productData;
   }
 
+  /**
+   * A container for additional, undeclared properties.
+   * This is a holder for any undeclared properties as specified with
+   * the 'additionalProperties' keyword in the OAS document.
+   */
+  private Map<String, Object> additionalProperties;
+
+  /**
+   * Set the additional (undeclared) property with the specified name and value.
+   * If the property does not already exist, create it otherwise replace it.
+   *
+   * @param key name of the property
+   * @param value value of the property
+   * @return the CartCartItem instance itself
+   */
+  public CartCartItem putAdditionalProperty(String key, Object value) {
+    if (this.additionalProperties == null) {
+        this.additionalProperties = new HashMap<String, Object>();
+    }
+    this.additionalProperties.put(key, value);
+    return this;
+  }
+
+  /**
+   * Return the additional (undeclared) property.
+   *
+   * @return a map of objects
+   */
+  public Map<String, Object> getAdditionalProperties() {
+    return additionalProperties;
+  }
+
+  /**
+   * Return the additional (undeclared) property with the specified name.
+   *
+   * @param key name of the property
+   * @return an object
+   */
+  public Object getAdditionalProperty(String key) {
+    if (this.additionalProperties == null) {
+        return null;
+    }
+    return this.additionalProperties.get(key);
+  }
 
 
   @Override
@@ -622,12 +665,13 @@ public class CartCartItem {
         Objects.equals(this.isVirtual, cartCartItem.isVirtual) &&
         Objects.equals(this.promotionGrns, cartCartItem.promotionGrns) &&
         Objects.equals(this.additionalInfo, cartCartItem.additionalInfo) &&
-        Objects.equals(this.productData, cartCartItem.productData);
+        Objects.equals(this.productData, cartCartItem.productData)&&
+        Objects.equals(this.additionalProperties, cartCartItem.additionalProperties);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(id, productGrn, productConfiguration, quantity, price, listPrice, discount, basePrice, customPrice, vatAmount, vatPercentage, vatInaccurate, vatCalculated, localizedName, productCode, productSku, imageGrn, variantOptions, isVirtual, promotionGrns, additionalInfo, productData);
+    return Objects.hash(id, productGrn, productConfiguration, quantity, price, listPrice, discount, basePrice, customPrice, vatAmount, vatPercentage, vatInaccurate, vatCalculated, localizedName, productCode, productSku, imageGrn, variantOptions, isVirtual, promotionGrns, additionalInfo, productData, additionalProperties);
   }
 
   @Override
@@ -656,6 +700,7 @@ public class CartCartItem {
     sb.append("    promotionGrns: ").append(toIndentedString(promotionGrns)).append("\n");
     sb.append("    additionalInfo: ").append(toIndentedString(additionalInfo)).append("\n");
     sb.append("    productData: ").append(toIndentedString(productData)).append("\n");
+    sb.append("    additionalProperties: ").append(toIndentedString(additionalProperties)).append("\n");
     sb.append("}");
     return sb.toString();
   }
@@ -705,24 +750,16 @@ public class CartCartItem {
     openapiRequiredFields = new HashSet<String>();
   }
 
- /**
-  * Validates the JSON Element and throws an exception if issues found
-  *
-  * @param jsonElement JSON Element
-  * @throws IOException if the JSON Element is invalid with respect to CartCartItem
-  */
+  /**
+   * Validates the JSON Element and throws an exception if issues found
+   *
+   * @param jsonElement JSON Element
+   * @throws IOException if the JSON Element is invalid with respect to CartCartItem
+   */
   public static void validateJsonElement(JsonElement jsonElement) throws IOException {
       if (jsonElement == null) {
         if (!CartCartItem.openapiRequiredFields.isEmpty()) { // has required fields but JSON element is null
           throw new IllegalArgumentException(String.format("The required field(s) %s in CartCartItem is not found in the empty JSON string", CartCartItem.openapiRequiredFields.toString()));
-        }
-      }
-
-      Set<Map.Entry<String, JsonElement>> entries = jsonElement.getAsJsonObject().entrySet();
-      // check to see if the JSON string contains additional fields
-      for (Map.Entry<String, JsonElement> entry : entries) {
-        if (!CartCartItem.openapiFields.contains(entry.getKey())) {
-          throw new IllegalArgumentException(String.format("The field `%s` in the JSON string is not defined in the `CartCartItem` properties. JSON: %s", entry.getKey(), jsonElement.toString()));
         }
       }
         JsonObject jsonObj = jsonElement.getAsJsonObject();
@@ -809,6 +846,28 @@ public class CartCartItem {
            @Override
            public void write(JsonWriter out, CartCartItem value) throws IOException {
              JsonObject obj = thisAdapter.toJsonTree(value).getAsJsonObject();
+             obj.remove("additionalProperties");
+             // serialize additional properties
+             if (value.getAdditionalProperties() != null) {
+               for (Map.Entry<String, Object> entry : value.getAdditionalProperties().entrySet()) {
+                 if (entry.getValue() instanceof String)
+                   obj.addProperty(entry.getKey(), (String) entry.getValue());
+                 else if (entry.getValue() instanceof Number)
+                   obj.addProperty(entry.getKey(), (Number) entry.getValue());
+                 else if (entry.getValue() instanceof Boolean)
+                   obj.addProperty(entry.getKey(), (Boolean) entry.getValue());
+                 else if (entry.getValue() instanceof Character)
+                   obj.addProperty(entry.getKey(), (Character) entry.getValue());
+                 else {
+                   JsonElement jsonElement = gson.toJsonTree(entry.getValue());
+                   if (jsonElement.isJsonArray()) {
+                     obj.add(entry.getKey(), jsonElement.getAsJsonArray());
+                   } else {
+                     obj.add(entry.getKey(), jsonElement.getAsJsonObject());
+                   }
+                 }
+               }
+             }
              elementAdapter.write(out, obj);
            }
 
@@ -816,29 +875,50 @@ public class CartCartItem {
            public CartCartItem read(JsonReader in) throws IOException {
              JsonElement jsonElement = elementAdapter.read(in);
              validateJsonElement(jsonElement);
-             return thisAdapter.fromJsonTree(jsonElement);
+             JsonObject jsonObj = jsonElement.getAsJsonObject();
+             // store additional fields in the deserialized instance
+             CartCartItem instance = thisAdapter.fromJsonTree(jsonObj);
+             for (Map.Entry<String, JsonElement> entry : jsonObj.entrySet()) {
+               if (!openapiFields.contains(entry.getKey())) {
+                 if (entry.getValue().isJsonPrimitive()) { // primitive type
+                   if (entry.getValue().getAsJsonPrimitive().isString())
+                     instance.putAdditionalProperty(entry.getKey(), entry.getValue().getAsString());
+                   else if (entry.getValue().getAsJsonPrimitive().isNumber())
+                     instance.putAdditionalProperty(entry.getKey(), entry.getValue().getAsNumber());
+                   else if (entry.getValue().getAsJsonPrimitive().isBoolean())
+                     instance.putAdditionalProperty(entry.getKey(), entry.getValue().getAsBoolean());
+                   else
+                     throw new IllegalArgumentException(String.format("The field `%s` has unknown primitive type. Value: %s", entry.getKey(), entry.getValue().toString()));
+                 } else if (entry.getValue().isJsonArray()) {
+                     instance.putAdditionalProperty(entry.getKey(), gson.fromJson(entry.getValue(), List.class));
+                 } else { // JSON object
+                     instance.putAdditionalProperty(entry.getKey(), gson.fromJson(entry.getValue(), HashMap.class));
+                 }
+               }
+             }
+             return instance;
            }
 
        }.nullSafe();
     }
   }
 
- /**
-  * Create an instance of CartCartItem given an JSON string
-  *
-  * @param jsonString JSON string
-  * @return An instance of CartCartItem
-  * @throws IOException if the JSON string is invalid with respect to CartCartItem
-  */
+  /**
+   * Create an instance of CartCartItem given an JSON string
+   *
+   * @param jsonString JSON string
+   * @return An instance of CartCartItem
+   * @throws IOException if the JSON string is invalid with respect to CartCartItem
+   */
   public static CartCartItem fromJson(String jsonString) throws IOException {
     return JSON.getGson().fromJson(jsonString, CartCartItem.class);
   }
 
- /**
-  * Convert an instance of CartCartItem to an JSON string
-  *
-  * @return JSON string
-  */
+  /**
+   * Convert an instance of CartCartItem to an JSON string
+   *
+   * @return JSON string
+   */
   public String toJson() {
     return JSON.getGson().toJson(this);
   }

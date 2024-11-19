@@ -11,7 +11,7 @@ Name | Type | Description | Notes
 **lastname**| **String** |   | [optional]
 **email**| **String** |   | [optional]
 **phoneNumber**| **String** |   | [optional]
-**groups**| **List<String>** |   | [optional]
+**groups**| **List<String>** |   | [optional] [default to new ArrayList<>()]
 **taxCode**| **String** |   | [optional]
 **certifiedEmail**| **String** |   | [optional]
 **sdiCode**| **String** |   | [optional]

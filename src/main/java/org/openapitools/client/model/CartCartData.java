@@ -50,19 +50,18 @@ import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
 
-import java.lang.reflect.Type;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
-import GeminiCommerce_Cart.JSON;
+import GeminiCommerce.Cart.JSON;
 
 /**
  * CartCartData
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-05-21T15:21:28.271708366Z[Etc/UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-19T10:43:10.860688922Z[Etc/UTC]", comments = "Generator version: 7.9.0")
 public class CartCartData {
   public static final String SERIALIZED_NAME_ID = "id";
   @SerializedName(SERIALIZED_NAME_ID)
@@ -86,19 +85,19 @@ public class CartCartData {
 
   public static final String SERIALIZED_NAME_ITEMS = "items";
   @SerializedName(SERIALIZED_NAME_ITEMS)
-  private List<CartCartItem> items;
+  private List<CartCartItem> items = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_PAYMENTS = "payments";
   @SerializedName(SERIALIZED_NAME_PAYMENTS)
-  private List<CartPaymentData> payments;
+  private List<CartPaymentData> payments = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_SHIPMENTS = "shipments";
   @SerializedName(SERIALIZED_NAME_SHIPMENTS)
-  private List<CartShipmentData> shipments;
+  private List<CartShipmentData> shipments = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_PROMOTIONS = "promotions";
   @SerializedName(SERIALIZED_NAME_PROMOTIONS)
-  private List<CartPromotionData> promotions;
+  private List<CartPromotionData> promotions = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_CURRENCY = "currency";
   @SerializedName(SERIALIZED_NAME_CURRENCY)
@@ -106,7 +105,7 @@ public class CartCartData {
 
   public static final String SERIALIZED_NAME_SUBTOTALS = "subtotals";
   @SerializedName(SERIALIZED_NAME_SUBTOTALS)
-  private List<CartCartSubtotal> subtotals;
+  private List<CartCartSubtotal> subtotals = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_TOTAL = "total";
   @SerializedName(SERIALIZED_NAME_TOTAL)
@@ -156,10 +155,10 @@ public class CartCartData {
     return this;
   }
 
-   /**
+  /**
    * Get id
    * @return id
-  **/
+   */
   @javax.annotation.Nullable
   public String getId() {
     return id;
@@ -175,10 +174,10 @@ public class CartCartData {
     return this;
   }
 
-   /**
+  /**
    * Get grn
    * @return grn
-  **/
+   */
   @javax.annotation.Nullable
   public String getGrn() {
     return grn;
@@ -194,10 +193,10 @@ public class CartCartData {
     return this;
   }
 
-   /**
+  /**
    * Get channel
    * @return channel
-  **/
+   */
   @javax.annotation.Nullable
   public String getChannel() {
     return channel;
@@ -213,10 +212,10 @@ public class CartCartData {
     return this;
   }
 
-   /**
+  /**
    * Get market
    * @return market
-  **/
+   */
   @javax.annotation.Nullable
   public String getMarket() {
     return market;
@@ -232,10 +231,10 @@ public class CartCartData {
     return this;
   }
 
-   /**
+  /**
    * Get locale
    * @return locale
-  **/
+   */
   @javax.annotation.Nullable
   public String getLocale() {
     return locale;
@@ -259,10 +258,10 @@ public class CartCartData {
     return this;
   }
 
-   /**
+  /**
    * Get items
    * @return items
-  **/
+   */
   @javax.annotation.Nullable
   public List<CartCartItem> getItems() {
     return items;
@@ -286,10 +285,10 @@ public class CartCartData {
     return this;
   }
 
-   /**
+  /**
    * Get payments
    * @return payments
-  **/
+   */
   @javax.annotation.Nullable
   public List<CartPaymentData> getPayments() {
     return payments;
@@ -313,10 +312,10 @@ public class CartCartData {
     return this;
   }
 
-   /**
+  /**
    * Get shipments
    * @return shipments
-  **/
+   */
   @javax.annotation.Nullable
   public List<CartShipmentData> getShipments() {
     return shipments;
@@ -340,10 +339,10 @@ public class CartCartData {
     return this;
   }
 
-   /**
+  /**
    * Get promotions
    * @return promotions
-  **/
+   */
   @javax.annotation.Nullable
   public List<CartPromotionData> getPromotions() {
     return promotions;
@@ -359,10 +358,10 @@ public class CartCartData {
     return this;
   }
 
-   /**
+  /**
    * Get currency
    * @return currency
-  **/
+   */
   @javax.annotation.Nullable
   public CartCurrency getCurrency() {
     return currency;
@@ -386,10 +385,10 @@ public class CartCartData {
     return this;
   }
 
-   /**
+  /**
    * Get subtotals
    * @return subtotals
-  **/
+   */
   @javax.annotation.Nullable
   public List<CartCartSubtotal> getSubtotals() {
     return subtotals;
@@ -405,10 +404,10 @@ public class CartCartData {
     return this;
   }
 
-   /**
+  /**
    * Get total
    * @return total
-  **/
+   */
   @javax.annotation.Nullable
   public CartMoney getTotal() {
     return total;
@@ -424,10 +423,10 @@ public class CartCartData {
     return this;
   }
 
-   /**
+  /**
    * Get totalDue
    * @return totalDue
-  **/
+   */
   @javax.annotation.Nullable
   public CartMoney getTotalDue() {
     return totalDue;
@@ -443,10 +442,10 @@ public class CartCartData {
     return this;
   }
 
-   /**
+  /**
    * Get vatIncluded
    * @return vatIncluded
-  **/
+   */
   @javax.annotation.Nullable
   public Boolean getVatIncluded() {
     return vatIncluded;
@@ -462,10 +461,10 @@ public class CartCartData {
     return this;
   }
 
-   /**
+  /**
    * Get billingAddress
    * @return billingAddress
-  **/
+   */
   @javax.annotation.Nullable
   public CartPostalAddress getBillingAddress() {
     return billingAddress;
@@ -481,10 +480,10 @@ public class CartCartData {
     return this;
   }
 
-   /**
+  /**
    * Get shippingAddress
    * @return shippingAddress
-  **/
+   */
   @javax.annotation.Nullable
   public CartPostalAddress getShippingAddress() {
     return shippingAddress;
@@ -500,10 +499,10 @@ public class CartCartData {
     return this;
   }
 
-   /**
+  /**
    * Get status
    * @return status
-  **/
+   */
   @javax.annotation.Nullable
   public CartCartStatus getStatus() {
     return status;
@@ -519,10 +518,10 @@ public class CartCartData {
     return this;
   }
 
-   /**
+  /**
    * Get customer
    * @return customer
-  **/
+   */
   @javax.annotation.Nullable
   public CartCustomerData getCustomer() {
     return customer;
@@ -538,10 +537,10 @@ public class CartCartData {
     return this;
   }
 
-   /**
+  /**
    * Get notes
    * @return notes
-  **/
+   */
   @javax.annotation.Nullable
   public String getNotes() {
     return notes;
@@ -557,10 +556,10 @@ public class CartCartData {
     return this;
   }
 
-   /**
+  /**
    * Get createdAt
    * @return createdAt
-  **/
+   */
   @javax.annotation.Nullable
   public OffsetDateTime getCreatedAt() {
     return createdAt;
@@ -576,10 +575,10 @@ public class CartCartData {
     return this;
   }
 
-   /**
+  /**
    * Get updatedAt
    * @return updatedAt
-  **/
+   */
   @javax.annotation.Nullable
   public OffsetDateTime getUpdatedAt() {
     return updatedAt;
@@ -589,6 +588,50 @@ public class CartCartData {
     this.updatedAt = updatedAt;
   }
 
+  /**
+   * A container for additional, undeclared properties.
+   * This is a holder for any undeclared properties as specified with
+   * the 'additionalProperties' keyword in the OAS document.
+   */
+  private Map<String, Object> additionalProperties;
+
+  /**
+   * Set the additional (undeclared) property with the specified name and value.
+   * If the property does not already exist, create it otherwise replace it.
+   *
+   * @param key name of the property
+   * @param value value of the property
+   * @return the CartCartData instance itself
+   */
+  public CartCartData putAdditionalProperty(String key, Object value) {
+    if (this.additionalProperties == null) {
+        this.additionalProperties = new HashMap<String, Object>();
+    }
+    this.additionalProperties.put(key, value);
+    return this;
+  }
+
+  /**
+   * Return the additional (undeclared) property.
+   *
+   * @return a map of objects
+   */
+  public Map<String, Object> getAdditionalProperties() {
+    return additionalProperties;
+  }
+
+  /**
+   * Return the additional (undeclared) property with the specified name.
+   *
+   * @param key name of the property
+   * @return an object
+   */
+  public Object getAdditionalProperty(String key) {
+    if (this.additionalProperties == null) {
+        return null;
+    }
+    return this.additionalProperties.get(key);
+  }
 
 
   @Override
@@ -620,12 +663,13 @@ public class CartCartData {
         Objects.equals(this.customer, cartCartData.customer) &&
         Objects.equals(this.notes, cartCartData.notes) &&
         Objects.equals(this.createdAt, cartCartData.createdAt) &&
-        Objects.equals(this.updatedAt, cartCartData.updatedAt);
+        Objects.equals(this.updatedAt, cartCartData.updatedAt)&&
+        Objects.equals(this.additionalProperties, cartCartData.additionalProperties);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(id, grn, channel, market, locale, items, payments, shipments, promotions, currency, subtotals, total, totalDue, vatIncluded, billingAddress, shippingAddress, status, customer, notes, createdAt, updatedAt);
+    return Objects.hash(id, grn, channel, market, locale, items, payments, shipments, promotions, currency, subtotals, total, totalDue, vatIncluded, billingAddress, shippingAddress, status, customer, notes, createdAt, updatedAt, additionalProperties);
   }
 
   @Override
@@ -653,6 +697,7 @@ public class CartCartData {
     sb.append("    notes: ").append(toIndentedString(notes)).append("\n");
     sb.append("    createdAt: ").append(toIndentedString(createdAt)).append("\n");
     sb.append("    updatedAt: ").append(toIndentedString(updatedAt)).append("\n");
+    sb.append("    additionalProperties: ").append(toIndentedString(additionalProperties)).append("\n");
     sb.append("}");
     return sb.toString();
   }
@@ -701,24 +746,16 @@ public class CartCartData {
     openapiRequiredFields = new HashSet<String>();
   }
 
- /**
-  * Validates the JSON Element and throws an exception if issues found
-  *
-  * @param jsonElement JSON Element
-  * @throws IOException if the JSON Element is invalid with respect to CartCartData
-  */
+  /**
+   * Validates the JSON Element and throws an exception if issues found
+   *
+   * @param jsonElement JSON Element
+   * @throws IOException if the JSON Element is invalid with respect to CartCartData
+   */
   public static void validateJsonElement(JsonElement jsonElement) throws IOException {
       if (jsonElement == null) {
         if (!CartCartData.openapiRequiredFields.isEmpty()) { // has required fields but JSON element is null
           throw new IllegalArgumentException(String.format("The required field(s) %s in CartCartData is not found in the empty JSON string", CartCartData.openapiRequiredFields.toString()));
-        }
-      }
-
-      Set<Map.Entry<String, JsonElement>> entries = jsonElement.getAsJsonObject().entrySet();
-      // check to see if the JSON string contains additional fields
-      for (Map.Entry<String, JsonElement> entry : entries) {
-        if (!CartCartData.openapiFields.contains(entry.getKey())) {
-          throw new IllegalArgumentException(String.format("The field `%s` in the JSON string is not defined in the `CartCartData` properties. JSON: %s", entry.getKey(), jsonElement.toString()));
         }
       }
         JsonObject jsonObj = jsonElement.getAsJsonObject();
@@ -855,6 +892,28 @@ public class CartCartData {
            @Override
            public void write(JsonWriter out, CartCartData value) throws IOException {
              JsonObject obj = thisAdapter.toJsonTree(value).getAsJsonObject();
+             obj.remove("additionalProperties");
+             // serialize additional properties
+             if (value.getAdditionalProperties() != null) {
+               for (Map.Entry<String, Object> entry : value.getAdditionalProperties().entrySet()) {
+                 if (entry.getValue() instanceof String)
+                   obj.addProperty(entry.getKey(), (String) entry.getValue());
+                 else if (entry.getValue() instanceof Number)
+                   obj.addProperty(entry.getKey(), (Number) entry.getValue());
+                 else if (entry.getValue() instanceof Boolean)
+                   obj.addProperty(entry.getKey(), (Boolean) entry.getValue());
+                 else if (entry.getValue() instanceof Character)
+                   obj.addProperty(entry.getKey(), (Character) entry.getValue());
+                 else {
+                   JsonElement jsonElement = gson.toJsonTree(entry.getValue());
+                   if (jsonElement.isJsonArray()) {
+                     obj.add(entry.getKey(), jsonElement.getAsJsonArray());
+                   } else {
+                     obj.add(entry.getKey(), jsonElement.getAsJsonObject());
+                   }
+                 }
+               }
+             }
              elementAdapter.write(out, obj);
            }
 
@@ -862,29 +921,50 @@ public class CartCartData {
            public CartCartData read(JsonReader in) throws IOException {
              JsonElement jsonElement = elementAdapter.read(in);
              validateJsonElement(jsonElement);
-             return thisAdapter.fromJsonTree(jsonElement);
+             JsonObject jsonObj = jsonElement.getAsJsonObject();
+             // store additional fields in the deserialized instance
+             CartCartData instance = thisAdapter.fromJsonTree(jsonObj);
+             for (Map.Entry<String, JsonElement> entry : jsonObj.entrySet()) {
+               if (!openapiFields.contains(entry.getKey())) {
+                 if (entry.getValue().isJsonPrimitive()) { // primitive type
+                   if (entry.getValue().getAsJsonPrimitive().isString())
+                     instance.putAdditionalProperty(entry.getKey(), entry.getValue().getAsString());
+                   else if (entry.getValue().getAsJsonPrimitive().isNumber())
+                     instance.putAdditionalProperty(entry.getKey(), entry.getValue().getAsNumber());
+                   else if (entry.getValue().getAsJsonPrimitive().isBoolean())
+                     instance.putAdditionalProperty(entry.getKey(), entry.getValue().getAsBoolean());
+                   else
+                     throw new IllegalArgumentException(String.format("The field `%s` has unknown primitive type. Value: %s", entry.getKey(), entry.getValue().toString()));
+                 } else if (entry.getValue().isJsonArray()) {
+                     instance.putAdditionalProperty(entry.getKey(), gson.fromJson(entry.getValue(), List.class));
+                 } else { // JSON object
+                     instance.putAdditionalProperty(entry.getKey(), gson.fromJson(entry.getValue(), HashMap.class));
+                 }
+               }
+             }
+             return instance;
            }
 
        }.nullSafe();
     }
   }
 
- /**
-  * Create an instance of CartCartData given an JSON string
-  *
-  * @param jsonString JSON string
-  * @return An instance of CartCartData
-  * @throws IOException if the JSON string is invalid with respect to CartCartData
-  */
+  /**
+   * Create an instance of CartCartData given an JSON string
+   *
+   * @param jsonString JSON string
+   * @return An instance of CartCartData
+   * @throws IOException if the JSON string is invalid with respect to CartCartData
+   */
   public static CartCartData fromJson(String jsonString) throws IOException {
     return JSON.getGson().fromJson(jsonString, CartCartData.class);
   }
 
- /**
-  * Convert an instance of CartCartData to an JSON string
-  *
-  * @return JSON string
-  */
+  /**
+   * Convert an instance of CartCartData to an JSON string
+   *
+   * @return JSON string
+   */
   public String toJson() {
     return JSON.getGson().toJson(this);
   }
